@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" defer href="css/style.css" />
+    <script src="js/main.js"></script>
+    <title>Emoji game</title>
+  </head>
+  <body>
+    <section class="smileys"><span id="wordCount">0</span> Emojies</section>
+    <header>
+      <h1>Emoji Game</h1>
+      <div>
+        <div>
+          <input class="text" type="text" id="inputText" maxlength="2" />
+        </div>
+
+        <div class="duplicate">
+          <input class="number" type="number" id="inputNumber" />
+
+          <input class="send" type="button" value="DUMP" onclick="addEmoji()" />
+          <!-- <input class="send" type="button" value="Reset" onclick="reset()"> -->
+        </div>
+      </div>
+    </header>
+
+    <article>
+      <section>
+        <ul id="emojiList">
+          <!-- Hier komen de emoji's -->
+        </ul>
+      </section>
+    </article>
+  </body>
+</html>
